@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+:root
+{
+    font-family: "Poppins", sans-serif;
+    --color-bg-main: #171c1f;
+    --color-bg-secondary: #292f32;
+    --color-bg-tertiary: #2d313a;
+
+    --color-text-main: #d4dff2;
+    --color-text-secondary: #94a1bb;
+    --color-text-tertiary: #6f798a;
+}
+
+body
+{
+
+    background-color: var(--color-bg-main);
+    color: var(--color-text-main);
+    line-height: 1.5;
+}
+
+p
+{
+    background-color: var(--color-bg-secondary);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+h1
+{
+    color: var(--color-text-main);
+    font-weight: 600;
+}
+
+h2
+{
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}
+
+h3
+{
+    color: var(--color-text-tertiary);
+    font-weight: 400;
+}
+
+a {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-family: inherit;
+}
+
+a:hover,
+a:focus {
+    color: var(--color-text-main);
+    text-decoration: underline;
+    outline: none;
+}
+
+a:active {
+    color: var(--color-text-tertiary);
+}
+
+code
+{
+    font-family: 'Fira Code', monospace;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+input,
+textarea,
+select,
+button
+{
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--color-text-main);
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-bg-tertiary);
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus
+{
+    border-color: var(--color-text-secondary);
+    box-shadow: 0 0 0 2px rgba(148, 161, 187, 0.3);
+}
+
+input::placeholder,
+textarea::placeholder
+{
+    color: var(--color-text-tertiary);
+}
+
+
+button
+{
+    background-color: var(--color-text-secondary);
+    color: var(--color-bg-main);
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover
+{
+    background-color: var(--color-text-main);
+}
+
